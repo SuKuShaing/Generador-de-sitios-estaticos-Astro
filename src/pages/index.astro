@@ -1,16 +1,28 @@
 ---
+console.log("Astro Proyecto 3")
+// Este código se verá en terminal y se ejecuta en el servidor de desarrollo y no en le servidor en la nube
+// Aquí se puede traer datos de un servidor y convertirlos a una página
+// cargar código de Markdawn
+// o código de frameworks
 
+
+const title = 'Mi proyecto en Astro!!!'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<h1 class="title">{title}</h1>
+<!-- con las {} lee lo que está en la constante -->
+
+<script>
+	console.log("Hola Mundo")
+</script>
+
+
+<style>
+	body {
+		background: #202020;
+		color: white;
+	}
+	.title {
+		color: skyblue;
+	}
+</style>

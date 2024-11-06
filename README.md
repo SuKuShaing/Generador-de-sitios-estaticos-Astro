@@ -1,3 +1,13 @@
+Con esto se solucionan el error
+```
+EPERM: operation not permitted, rmdir 'D:\Progra\Youtube\Astro\Generador de sitios estaticos - Fazt\node_modules\.vite\deps'
+  Stack trace:
+```
+https://github.com/vitejs/vite/issues/14056
+
+
+
+
 # Astro Starter Kit: Minimal
 
 ```sh
