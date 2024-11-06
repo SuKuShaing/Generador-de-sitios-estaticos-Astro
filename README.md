@@ -1,3 +1,10 @@
+# Generador de sitios estáticos
+
+Siguiendo el tutorial de Fazt
+https://youtu.be/sOXW0ZnJxbQ?si=f7lNiwBYhhZp2DdR
+
+
+
 Con esto se solucionan el error
 ```
 EPERM: operation not permitted, rmdir 'D:\Progra\Youtube\Astro\Generador de sitios estaticos - Fazt\node_modules\.vite\deps'
