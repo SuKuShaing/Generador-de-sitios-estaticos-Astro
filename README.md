@@ -7,8 +7,13 @@ https://youtu.be/sOXW0ZnJxbQ?si=f7lNiwBYhhZp2DdR
 
 Con esto se solucionan el error
 ```
+$ npm run build
+
+> generador-de-sitios-estaticos---fazt@0.0.1 build
+> astro build
 EPERM: operation not permitted, rmdir 'D:\Progra\Youtube\Astro\Generador de sitios estaticos - Fazt\node_modules\.vite\deps'
   Stack trace:
+  
 ```
 https://github.com/vitejs/vite/issues/14056
 
