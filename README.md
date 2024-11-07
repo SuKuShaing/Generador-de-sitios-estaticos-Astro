@@ -13,8 +13,9 @@ $ npm run build
 > astro build
 EPERM: operation not permitted, rmdir 'D:\Progra\Youtube\Astro\Generador de sitios estaticos - Fazt\node_modules\.vite\deps'
   Stack trace:
-  
+
 ```
+ejecutando los pasos de aquí, se soluciona
 https://github.com/vitejs/vite/issues/14056
 
 
