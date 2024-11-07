@@ -1,0 +1,29 @@
+---
+// Astro tiene un objeto global llamado Astro
+
+// Interfaces para obtener autocompletado
+interface Props {
+	titulo?: string;
+	content?: string;
+}
+// si dentro de una interfaz tiene '?' quiere decir que puede que venga algo o no
+
+const { titulo = "Default title", content = "Default content" } = Astro.props;
+console.log(titulo, content)
+---
+
+<div class="card">
+	<h1>{titulo}</h1>
+	<p>{content}</p>
+</div>
+
+<style>
+	.card {
+		background-color: #eaeaea;
+		border-radius: 5px;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+		padding: 20px;
+		width: 300px;
+		margin-bottom: 5px;
+	}
+</style>
