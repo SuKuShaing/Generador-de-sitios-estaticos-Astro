@@ -1,34 +1,23 @@
 ---
 import Card from "../components/card.astro";
 // podemos usar mayusculas y minusculas, pero lo colocamos en C mayuscula para resaltar que es un componente
+import Layout from "../components/layout.astro";
 ---
-
-<!doctype html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Mis Servicios</title>
-	</head>
-	<body>
-		<h1>Mis Servicios Original</h1>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minus. Est
-			tenetur fugit aut, qui rem sit dolore totam ab!
-		</p>
-
-		<Card titulo="Hola Mundo" content="este es una prueba" />
-		<Card
-			titulo="Programación"
-			content="servicio de desarrollo de apliacaiones"
-		/>
-		<Card titulo="Diseño" content="diseño de interfaces webs" />
-		<Card titulo="asistencia" content="ofrecemos asistencia profecional" />
-		<Card titulo="Hola Mundo 2" content="Holiwis 2" />
-        <Card/>
-        <Card content="solo content"/>
-        <Card/>
-        <Card titulo="Solo title"/>
-        <Card/>
-	</body>
-</html>
+<Layout pageTitle="Mis Servicios">
+	<h1>Mis Servicios Original</h1>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minus. Est
+		tenetur fugit aut, qui rem sit dolore totam ab!
+	</p>
+	
+	<Card titulo="Hola Mundo" content="este es una prueba" />
+	<Card titulo="Programación" content="servicio de desarrollo de apliacaiones"/>
+	<Card titulo="Diseño" content="diseño de interfaces webs" />
+	<Card titulo="asistencia" content="ofrecemos asistencia profecional" />
+	<Card titulo="Hola Mundo 2" content="Holiwis 2" />
+	<Card/>
+	<Card content="solo content"/>
+	<Card/>
+	<Card titulo="Solo title"/>
+	<Card/>
+</Layout>

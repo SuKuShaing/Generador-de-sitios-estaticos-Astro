@@ -1,0 +1,57 @@
+---
+import { fade } from "astro:transitions"
+
+console.log("Astro Proyecto 3")
+// Este código se verá en terminal y se ejecuta en el servidor de desarrollo y no en le servidor en la nube
+// Aquí se puede traer datos de un servidor y convertirlos a una página
+// cargar código de Markdawn
+// o código de frameworks
+
+
+const title = 'Mi proyecto en Astro!!!'
+const color = 'warning'
+
+const hobbies = ['Programar', 'Leer', 'Escribir', 'Ver peliculas', 'Jugar videojuegos', 'Dormir', 'Comer', 'Hacer ejercicio', 'Viajar', 'Aprender']
+
+const isActive = false // este valor puede venir del servidor
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<ul>
+	{hobbies.map(hobby => <li>
+		<h3>{hobby}</h3>
+		<button>Like</button>
+	</li>)}
+</ul>
+
+<h3 class="{danger}">
+	<!-- {isActive && "El usuario está activo"} -->
+	{!isActive && "El usuario No está activo"}
+</h3>
+
+<h1 class={color}>{hobbies[0]}</h1>
+<!-- con las {} lee lo que está en la constante -->
+
+<script>
+	console.log("Hola Mundo")
+</script>
+
+
+<style>
+	body {
+		background: #202020;
+		color: white;
+	}
+	.title {
+		color: skyblue;
+	}
+	.danger {
+		color: red;
+	}
+	.warning {
+		color: yellow;
+	}
+</style>
