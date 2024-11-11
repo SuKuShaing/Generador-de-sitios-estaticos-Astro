@@ -1,5 +1,7 @@
 ---
-import Layout from "../../components/layout.astro"
+import Layout from "../../components/layout.astro";
+import bdImage from '../../images/pc.jpg';
+import { Image } from "astro:assets";
 
 // cargar archivos
 const posts = await Astro.glob('./post/*.md')
@@ -7,6 +9,15 @@ const posts = await Astro.glob('./post/*.md')
 ---
 <Layout pageTitle="Blog de desarrollo" pageDescription="Tutoriales de desarrollo y programación">
     <h1>Blog</h1>
+
+    <img width="100px" src="https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg" alt="pc">
+    <!-- importanto imagenes remotamente -->
+    <img width="100px" src="/playa.jpeg" alt="pc" /> 
+    <!-- desde la carpeta public, para imagenes disponibles globalmente, como el favicon, solo coloca el / -->
+    <img width="100px" src={bdImage.src} alt="pc" />
+    <!-- referenciar mediante importación -->
+    <Image src={bdImage} width="100" alt="pc" />
+    <!-- Image optimiza la imagen para que sea del tamaño exacto que debe ser -->
 
     {
         posts.map(post => {
