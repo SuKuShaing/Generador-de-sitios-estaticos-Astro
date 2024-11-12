@@ -1,8 +1,26 @@
 ---
 import Layout from "../components/layout.astro"
+import Button from "../components/ButtonSubscribe"
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 ---
 
 <Layout pageTitle="Página inicial" pageDescription="Esta es una página para ofrecer servicios de software">
 	<h1>Página Inicial</h1>
 	<p>Bienvenido a mi blog</p>
+
+	<!-- btn que carga de React -->
+	<Button client:load />
+	<!-- sí no se le coloca el client, será un botón estatico -->
+
+	<!-- 
+	client:load carga el componente cuando el cliente carga la página
+	client:idle carga el componente cuando el cliente está inactivo
+	client:media carga el componente cuando el cliente está en un medio específico (query espefico) | client:media="(min-width: 1024px)
+	client:only carga el componente solo en el cliente y no en el servidor
+	client:visible carga el componente cuando es visible en la pantalla
+	-->
+
+	<ToastContainer client:load />
+
 </Layout>

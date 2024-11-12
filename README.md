@@ -16,6 +16,26 @@ EPERM: operation not permitted, rmdir 'D:\Progra\Youtube\Astro\Generador de siti
 
 ```
 ejecutando los pasos de aquí, se soluciona
+
+👇️ clean npm cache
+npm cache clean --force
+
+👇️ (Windows) delete node_modules and package-lock.json
+rd /s /q "node_modules"
+del package-lock.json
+del -f yarn.lock
+
+👇️ update your npm version
+npm install -g npm@latest --force
+
+👇️ clean npm cache
+npm cache clean --force
+
+👇️ install packages
+npm install
+
+
+Solución encontrada aquí
 https://github.com/vitejs/vite/issues/14056
 
 
